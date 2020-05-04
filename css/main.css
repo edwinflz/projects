@@ -9,6 +9,43 @@
     --fuente-oswald: "Oswald", sans-serif;
 }
 
+
+/** UTILES **/
+
+.color-purple {
+    color: var(--purple-color);
+}
+
+.active {
+    color: #9270b9 !important;
+}
+
+.badge-purple-gradient {
+    color: var(--white-color);
+    background: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+
+.badge-aqua-gradient {
+    color: var(--white-color);
+    background: linear-gradient(40deg, #2096ff, #05ffa3);
+}
+
+.badge-peach-gradient {
+    color: var(--white-color);
+    background: linear-gradient(40deg, #ffd86f, #fc6262);
+}
+
+.badge-blue-gradient {
+    color: var(--white-color);
+    background: linear-gradient(40deg, #45cafc, #303f9f);
+}
+
+.separate {
+    border-bottom: 1px solid #ebebeb;
+}
+
+/*** ESTILOS ***/
+
 #navbar a {
     color: var(--blue-color);
     font-family: var(--fuente-oswald);
@@ -23,9 +60,15 @@
 }
 
 .bg-header {
+    background-color: var(--white-color);
     height: 90px;
     border-bottom: 1px solid #ebebeb;
     color: var(--blue-color) !important;
+}
+
+.nav-canvas {
+    background-color: var(--white-color);
+    z-index: 2;
 }
 
 .navbar-light .navbar-brand {
@@ -37,3 +80,36 @@
 #main h2 {
     font-size: 24px;
 }
+
+.card-projects {
+    border-radius: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+.projects-title {
+    color: var(--purple-color);
+    font-family: var(--fuente-oswald);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.projects-text {
+    font-weight: 400;
+    color: #747373;
+}
+
+.btn-projects {
+    border: none;
+}
+
+.btn-projects:focus{
+   box-shadow: none;
+}
+
+.btn-projects:hover{
+    color: var(--white-color);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+ }

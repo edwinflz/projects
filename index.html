@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="90">
 
 
     <!-- NavBar -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-header">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-header sticky-top">
 
         <div class="container">
 
@@ -30,13 +30,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="collapse navbar-collapse nav-canvas" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#main">CSS</a>
+                        <a class="nav-link" href="#project-css">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#speakers">JAVASCRIPT</a>
+                        <a class="nav-link" href="#project-javascript">JAVASCRIPT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#place-time">Angular</a>
@@ -50,58 +50,161 @@
 
     <section id="main" class="mt-5">
         <div class="container">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Bienvenidos!</h4>
+                <p>Mi nombre es Edwin José Florez Peralta, soy una persona apasionada por el desarrollo Web, mi lenguaje
+                    de programación preferido es JavaScript.
+                    Aquí encontrarás un repositorio de pequeños y medianos proyectos realizados con esta tecnología y se
+                    encuentran alojados en mi perfil de GitHub
+                </p>
+                <hr>
+                <p class="mb-0">Todo material presente es con base en la realización de cursos en plataformas
+                    tecnológicas como Platzi, EDteam, Udemy, Material propio.</p>
+            </div>
+        </div>
+        <div id="project-css" class="container separate">
             <div class="row">
                 <div class="col text-center text-uppercase">
                     <small>MAQUETACIONES</small>
-                    <h2>CSS3 - SASS - FLEXBOX - GRID - BOOTSTRAP 4</h2>
+                    <h2 class="color-purple">CSS3 - SASS - FLEXBOX - GRID - BOOTSTRAP 4</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title mb-0">Flexbox</h5>
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-success">Javascript</span>
-                                <span class="badge badge-secondary">Reacjs</span>
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
                             </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
-                                consectetur blanditiis, earum beatae sit reprehenderit velit modi?</p>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="images/leonidas.jpeg" height="250" class="card-img-top" alt="orador">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title mb-0">Sacha Lifszync</h5>
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-success">Javascript</span>
-                                <span class="badge badge-secondary">Reacjs</span>
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
                             </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
-                                consectetur blanditiis, earum beatae sit reprehenderit velit modi?</p>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="images/freddy.jpeg" height="250" class="card-img-top" alt="orador">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title mb-0">Sacha Lifszync</h5>
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-success">Javascript</span>
-                                <span class="badge badge-secondary">Reacjs</span>
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
                             </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
-                                consectetur blanditiis, earum beatae sit reprehenderit velit modi?</p>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-       
+
+        <div id="project-javascript" class="container separate">
+            <div class="row">
+                <div class="col text-center text-uppercase">
+                    <small>DESARROLLO APIS</small>
+                    <h2 class="color-purple">JAVASCRIPT - ECMASCRIPT6 - PROMISES - ASYNC-AWAIT - SPA</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
+                            <div class="badges mb-2">
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
+                            </div>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
+                            <div class="badges mb-2">
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
+                            </div>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card card-projects border-top-0">
+                        <a href="">
+                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
+                            <div class="badges mb-2">
+                                <span class="badge badge-aqua-gradient">CSS3</span>
+                                <span class="badge badge-purple-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">HTML5</span>
+                                <span class="badge badge-blue-gradient">Javascript</span>
+                            </div>
+                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
+                            <a href="javascript:void(0)"
+                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
     </section>
 
 
