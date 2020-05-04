@@ -1,0 +1,39 @@
+:root {
+    /*------ Colores */
+    --white-color: #fff;
+    --black-color: #333333;
+    --purple-color: #8841da;
+    --blue-color: #3f579a;
+    /* ------- Tipografia */
+    --fuente-lato: "Lato", sans-serif;
+    --fuente-oswald: "Oswald", sans-serif;
+}
+
+#navbar a {
+    color: var(--blue-color);
+    font-family: var(--fuente-oswald);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 1s ease;
+}
+
+#navbar a:hover {
+    text-decoration: underline solid Currentcolor;
+}
+
+.bg-header {
+    height: 90px;
+    border-bottom: 1px solid #ebebeb;
+    color: var(--blue-color) !important;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--blue-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main h2 {
+    font-size: 24px;
+}
