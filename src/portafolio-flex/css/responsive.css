@@ -1,0 +1,146 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero-image {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .burger-button {
+        display: block;
+    }
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ul {
+        display: initial;
+    }
+    .header ul li {
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .menu {
+        position: fixed;
+        background: #005566;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        /* Cuando el elemento tenga las 2 clases */
+        left: 0;
+    }
+    .project {
+        display: block;
+    }
+    .project-image-wrapper {
+        width: auto;
+        text-align: center;
+    }
+    .project-details {
+        width: auto;
+        /* font-size: 16px; */
+    }
+    .project-course,
+    .project-date,
+    .project-link {
+        margin: .3em 0;
+    }
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-course {
+        font-size: 1.2em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-link {
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: .8em;
+    }
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+    .project-details {
+        font-size: 12px;
+    }
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        display: block;
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    .hero {
+        padding: 2em 1em;
+    }
+}

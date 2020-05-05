@@ -20,7 +20,7 @@
 
         <div class="container">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="javascript:void(0)">
                 <img src="assets/img/computer.png" alt="logo">
                 stack MEAN
             </a>
@@ -33,13 +33,14 @@
             <div class="collapse navbar-collapse nav-canvas" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#project-css">CSS</a>
+                        <a class="nav-link" onclick="$('#project-css').animatescroll();" href="#project-css">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#project-javascript">JAVASCRIPT</a>
+                        <a class="nav-link" onclick="$('#project-javascript').animatescroll();"
+                            href="#project-javascript">JAVASCRIPT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#place-time">Angular</a>
+                        <a class="nav-link" href="javascript:void(0)">Angular</a>
                     </li>
                 </ul>
 
@@ -50,16 +51,21 @@
 
     <section id="main" class="mt-5">
         <div class="container">
-            <div class="alert alert-success" role="alert">
+            <div class="alert badge-blue-gradient alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="alert-heading">Bienvenidos!</h4>
-                <p>Mi nombre es Edwin José Florez Peralta, soy una persona apasionada por el desarrollo Web, mi lenguaje
+                <p>Mi nombre es Edwin José Florez Peralta, soy una persona apasionada por el desarrollo Web, cuyo
+                    lenguaje
                     de programación preferido es JavaScript.
-                    Aquí encontrarás un repositorio de pequeños y medianos proyectos realizados con esta tecnología y se
-                    encuentran alojados en mi perfil de GitHub
+                    Aquí encontrarás un repositorio de pequeños y medianos proyectos realizados con esta tecnología
+                    (FRONTEND - BACKEND) y se
+                    encuentran alojados en mi perfil de GitHub.
                 </p>
                 <hr>
                 <p class="mb-0">Todo material presente es con base en la realización de cursos en plataformas
-                    tecnológicas como Platzi, EDteam, Udemy, Material propio.</p>
+                    tecnológicas como Platzi, EDteam, Udemy y Material propio.</p>
             </div>
         </div>
         <div id="project-css" class="container separate">
@@ -72,63 +78,56 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                     <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        <a href="src/portafolio-flex/" target="_blank">
+                            <img src="assets/img/portafolio-flexbox.jpg" height="250" class="card-img-top"
+                                alt="Portafolio Flexbox">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
+                            <h5 class="card-title mb-0"><a class="projects-title" href="src/portafolio-flex/"
+                                    target="_blank">Portafolio Flexbox</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
+                                <span class="badge badge-blue-gradient">HTML5</span>
+                                <span class="badge badge-purple-gradient">CSS3</span>
+                                <span class="badge badge-aqua-gradient">Flexbox</span>
+                                <span class="badge badge-peach-gradient">Javascript</span>
                             </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
+                            <p class="card-text projects-text">Maquetado HTML5 y CSS3, usando en el proceso semántica
+                                web, Flexbox, Media Queries, Javascript con Media Queries.
+                                <a href="javascript:void(0)" data-toggle="tooltip"
+                                    title="Ir a repositorio GITHUB">Repositorio Aquí!</a>
+                            </p>
+                            <a href="src/portafolio-flex/" target="_blank"
+                                class="btn badge-purple-gradient btn-projects btn-block waves">VER</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                     <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
+                        <a href="src/producto-digital/" target="_blank">
+                            <img src="assets/img/imagen-proyecto-desarrollo-web.gif" height="250" class="card-img-top"
+                                alt="Portafolio Flexbox">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
+                            <h5 class="card-title mb-0"><a class="projects-title" href="src/producto-digital/"
+                                    target="_blank">Producto Digital</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
+                                <span class="badge badge-blue-gradient">HTML5</span>
+                                <span class="badge badge-purple-gradient">CSS3</span>
                             </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
+                            <p class="card-text projects-text">Maquetado HTML5 y CSS3 co una pequeña conexión con PayPal
+                                para realizar el proceso de pago de los productos ofrecidos.
+                                <a href="javascript:void(0)" data-toggle="tooltip"
+                                    title="Ir a repositorio GITHUB">Repositorio Aquí!</a>
+                            </p>
+                            <a href="src/producto-digital/" target="_blank"
+                                class="btn badge-purple-gradient btn-projects btn-block waves">VER</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
-                            <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
-                            </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
-                        </div>
-                    </div>
-                </div>
+
+
 
             </div>
         </div>
@@ -141,65 +140,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
-                            <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
-                            </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
-                            <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
-                            </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card card-projects border-top-0">
-                        <a href="">
-                            <img src="https://picsum.photos/200/300" height="250" class="card-img-top" alt="orador">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-0"><a class="projects-title" href="">Flexbox</a></h5>
-                            <div class="badges mb-2">
-                                <span class="badge badge-aqua-gradient">CSS3</span>
-                                <span class="badge badge-purple-gradient">Flexbox</span>
-                                <span class="badge badge-peach-gradient">HTML5</span>
-                                <span class="badge badge-blue-gradient">Javascript</span>
-                            </div>
-                            <p class="card-text projects-text">Maquetado realizado con flexbox + responsive design</p>
-                            <a href="javascript:void(0)"
-                                class="btn badge-purple-gradient btn-projects btn-block">VER</a>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -214,6 +154,8 @@
 
     <script src="plugins/jquery/jquery-3.4.0.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="plugins/animatescroll.min.js"></script>
 </body>
 
 </html>

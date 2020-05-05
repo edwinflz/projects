@@ -1,0 +1,346 @@
+/*
+Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8bxt6c');
+    src:  url('../fonts/icomoon.eot?8bxt6c#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?8bxt6c') format('truetype'),
+      url('../fonts/icomoon.woff?8bxt6c') format('woff'),
+      url('../fonts/icomoon.svg?8bxt6c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+}
+
+.header {
+    background-color: #040404;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    /*Alinear items al centro*/
+    justify-content: space-between;
+    /*Espacio entre los items envia a los extremos*/
+    flex-wrap: wrap;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+    /*Hereda del padre*/
+}
+
+.header ul li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding: 0 10px;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /*400, bold equivale a 600*/
+}
+
+
+/*1.5 es 100% + 50%*/
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+}
+
+h1 strong {
+    color: #026fff;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    height: 300px;
+    background-color: #040404;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    object-fit: cover;
+    width: 440px;
+}
+
+.portfolio {
+    background: #fafafa;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-link {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-details {
+    width: 50%;
+}
+
+.project-image-wrapper {
+    width: 50%;
+}
+
+.project-image-wrapper img {
+    max-width: 100%; 
+    /* importante para ser responsive las img */
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.event-list-title {
+    margin-left: 20px;
+}
+
+.event {
+    margin: 1%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    /*Ocultar todo lo que sobre salga del margen de contenido event*/
+    flex-shrink: 0;
+    /*Mantener la integridad de n elementos por fila de acuerdo a su width*/
+    background: #f4fbff;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+    /* Mantener la integridad o calidad de imagen*/
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.form-email input {
+    border-color: gray;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../img/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.social-link.twitter {
+    background-image: url('../img/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('../img/facebook.svg');
+}
+
+.social-link.github {
+    background-image: url('../img/github.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../img/instagram.svg');
+}
+
+.footer {
+    color: white;
+    display: flex;
+    background-color: #1b2127;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+
+}
