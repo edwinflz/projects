@@ -36,7 +36,9 @@ class Router {
 
     _loadInitialRoute() {
         const pathNameSplit = window.location.pathname.split('/');
-        const pathSegs = pathNameSplit.length > 1 ? pathNameSplit.slice(3) : '';
+        const pathSegs = pathNameSplit.length > 1 ? pathNameSplit.slice(4) : '';
+
+        console.log(pathNameSplit);
 
         this.loadRoute(...pathSegs);
     }
