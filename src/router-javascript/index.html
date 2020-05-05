@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTER SPA</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            border: 1px solid #eeeeee;
+        }
+
+        .menu--item {
+            cursor: pointer;
+        }
+
+        .menu--item:hover {
+            color: limegreen;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu--item" onclick="router.loadRoute('')">
+            <p>Home</p>
+        </div>
+        <div class="menu--item" onclick="router.loadRoute('contacto')">
+            <p>Contact</p>
+        </div>
+        <div class="menu--item" onclick="router.loadRoute('about')">
+            <p>About me</p>
+        </div>
+    </header>
+
+    <div class="container" data-router>
+    </div>
+
+    <script src="router.js"></script>
+    <script src="routes.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
