@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700;800&display=swap');
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    background-color: #8f57fd;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+a {
+    color: #fff;
+    transition: .2s color;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.header-img {
+    width: 200px;
+}
+
+.header-menu {
+    color: #fff;
+}
+
+.header-menu ul {
+    list-style: none;
+    width: 100px;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    display: none;
+}
+
+.header-menu:hover ul,
+ul:hover {
+    display: block;
+    z-index: 1;
+}
+
+.header-menu li {
+    padding: 5px 0;
+}
+
+.header-menu .header-menu-profile img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.main {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 150px;
+}
+
+.main .main-title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main input {
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    outline: none;
+    width: 80%;
+    transition: .2s border;
+}
+
+.main input::placeholder {
+    color: #fff;
+    opacity: .6;
+}
+
+.main input:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.categories-title {
+    padding: 0 30px;
+    margin: 0;
+}
+
+.carousel-container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    height: 10px; 
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.carousel-item>img {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.carousel-container .carousel-body {
+    white-space: nowrap;
+    margin: 55px 0;
+    padding: 10px;
+}
+
+.carousel-container .carousel-item {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: rosybrown;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-container .carousel-item:hover~.carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel-container .carousel-body:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel-container .carousel-body:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-container .carousel-item-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .2) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    justify-content: flex-end;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-container .carousel-item:hover .carousel-item-details,
+.carousel-item-details:hover {
+    opacity: 1;
+}
+
+.carousel-container .carousel-buttons img {
+    height: 25px;
+    width: 25px;
+}
+
+.carousel-item-details .carousel-item-details-title,
+.carousel-item-details-subtitle {
+    margin: 2px 0 0 0;
+}
+
+.carousel-item-details .carousel-item-details-title {
+    font-size: 14px;
+}
+
+.carousel-item-details .carousel-item-details-subtitle {
+    font-size: 8px;
+}
+
+.footer {
+    padding: 20px 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
