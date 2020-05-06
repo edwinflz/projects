@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Tamaño del scroll en vertical */
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+
+/* Cambiamos el fondo cuando esté en active o hover */
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
+
+.home {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr 0;
+    grid-template-areas: "sidebar primary" "sidebar featuring";
+}
+
+.home.search-active {
+    grid-template-rows: 1fr 150px;
+}
+
+.home-sidebar {
+    grid-area: sidebar;
+}
+
+.home-primary {
+    grid-area: primary;
+}
+
+.home-featuring {
+    grid-area: featuring;
+    display: grid;
+}
+
+.home-featuring img {
+    align-self: center;
+    justify-self: center;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    background-color: #171929;
+    color: white;
+    /* Ahora equivale a 16px */
+    padding: 1em;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+}
+
+.logo-image {
+    margin: 0;
+}
+
+.logo-image img {
+    max-width: 100%;
+}
+
+.sidebar-playlist {
+    overflow: auto;
+}
+
+.my-playlist {
+    padding: 0 20px;
+}
+
+.my-playlist-items a {
+    color: white;
+    text-decoration: none;
+    /* 80% de los 16px */
+    font-size: .8em;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.my-playlist-items:last-child a {
+    margin-bottom: 0;
+}
+
+.my-playlist-items a:hover {
+    text-decoration: underline;
+}
+
+.playlist-friends {
+    padding: 0;
+}
+
+.playlist-friends-item {
+    color: white;
+    display: flex;
+    margin-bottom: 7px;
+    font-size: .8em;
+}
+
+.playlist-friends-item a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.playlist-friends-item:hover a {
+    text-decoration: underline;
+}
+
+.playlist-friends-item img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.playlist-friends-iten span {
+    display: inline-flex;
+}
+
+.home-primary {
+    display: grid;
+    grid-template-areas: "search user" "list list";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 300px 1fr;
+    padding: 10px;
+    overflow: auto;
+}
+
+.primary-search {
+    align-self: center;
+}
+
+.search {
+    grid-area: search;
+}
+
+.search input {
+    background: #f0f0f0;
+    font-family: 'Lato';
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 10px #f0f0f0;
+    box-sizing: border-box;
+}
+
+.primary-user {
+    justify-self: end;
+    margin: 5px 0;
+}
+
+.user p {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+.user img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.primary-list {
+    grid-area: list;
+    overflow: auto;
+}
+
+.primary-playlist-topic {
+    margin: 15px 0 0;
+    color: #888B8E;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.primary-playlist-title {
+    margin: 0 0 15px;
+    color: #3F546C;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.primary-playlist-list {
+    display: flex;
+    overflow: auto;
+}
+
+.primary-playlist-list .primary-playlist-listitem {
+    margin-right: 10px;
+}
+
+.primary-playlist-listitem {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary-playlist-listitem img {
+    width: 170px;
+    height: 256px;
+    object-fit: cover;
+}
+
+.primary-playlist-listitem-title {
+    margin: 5px 0;
+    color: #44546B;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.featuring {
+    background: linear-gradient(to right, #ff0000, #ff458b);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 100px;
+    color: white;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.featuring-image {
+    margin-right: 20px;
+}
+
+.featuring-title {
+    margin: 10px;
+}
+
+.featuring-album {
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.fadeIn {
+    animation: 1000ms fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

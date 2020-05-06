@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Vainilla JS</title>
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/modal.css">
+</head>
+
+<body>
+
+  <section class="home" id="home">
+
+    <div class="home-sidebar">
+      <div class="sidebar">
+
+        <div class="logo">
+          <figure class="logo-image">
+            <img src="src/images//platzi-video.png" alt="platzi video">
+          </figure>
+        </div>
+
+        <div class="sidebar-playlist">
+          <h2 class="sidebar-playlist-title">
+            Mi PlayList <span class="btn warning">Ver Playlist</span>
+          </h2>
+          <ol class="my-playlist" id="myPlaylist">
+
+            <li class="my-playlist-items">
+              <a href="javascript:void(0)">
+                <span>
+                  Reasons To Choose A Notebook Over A Computer Desktop
+                </span>
+              </a>
+            </li>
+
+            
+          </ol>
+        </div>
+
+        <div class="sidebar-playlist">
+
+          <h2 class="sidebar-playlist-title">
+            PlayList de amigos
+          </h2>
+
+          <ul class="playlist-friends" id="playlistFriends">
+
+            <li class="playlist-friends-item">
+              <a href="javascript:void(0)">
+                <img src="src/images/covers/echame-la-culpa.jpg" alt="img-cover">
+                <span>Luis Fonsi</span>
+              </a>
+            </li>
+
+         
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="home-primary">
+
+      <div class="primary-search">
+        <form action="" class="search" id="form">
+          <input type="text" name="name" placeholder="Buscar peli favorita">
+        </form>
+      </div>
+
+      <div class="primary-user">
+        <div class="user">
+          <p>
+            <img src="src/images/covers/gorillaz.jpg" alt="img-cover">
+            <span>Edwin Florez</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="primary-list">
+
+        <section class="primary-playlist">
+          <h3 class="primary-playlist-topic">A los golpes</h3>
+          <h2 class="primary-playlist-title">Acción</h2>
+          <div class="primary-playlist-list" id="action">
+            <img src="src/images//loader.gif" width="50" height="50" alt="gif">
+          </div>
+        </section>
+
+        <section class="primary-playlist">
+          <h3 class="primary-playlist-topic">Para llorar</h3>
+          <h2 class="primary-playlist-title">Drama</h2>
+          <div class="primary-playlist-list" id="drama">
+            <img src="src/images//loader.gif" width="50" height="50" alt="gif">
+            <!-- <article class="primary-playlist-listitem">
+              <div class="primary-playlist-listitem-image">
+                <img src="src/images/covers/midnight.jpg">
+              </div>
+              <h4 class="primary-playlist-listitem-title">
+                Titulo de la peli
+              </h4>
+            </article> -->
+          </div>
+        </section>
+
+        <section class="primary-playlist">
+          <h3 class="primary-playlist-topic">Dibujitos Animados</h3>
+          <h2 class="primary-playlist-title">Animacion</h2>
+          <div class="primary-playlist-list" id="animation">
+            <img src="src/images//loader.gif" width="50" height="50" alt="gif">
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="home-featuring" id="featuring"> 
+
+      <!-- <div class="featuring">
+
+        <div class="featuring-image">
+          <img src="src/images//covers//solar-sailer.jpg" alt="img" width="70" height="100">
+        </div>
+
+        <div class="featuring-content">
+          <p class="featuring-title">Pelicula Encontrada</p>
+          <p class="featuring-album">Titulo de la peli</p>
+        </div>
+
+      </div> -->
+
+    </div> 
+
+
+  </section>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="modal">
+    <h1>Título de pelicula</h1>
+    <div class="modal-content">
+      <img src="" alt="" width="170" height="256">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium
+        quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+    </div>
+    <div class="modal-buttons">
+      <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="src/js/home.js"></script>
+
+
+
+</body>
+
+</html>

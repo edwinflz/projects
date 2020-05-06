@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Proyectos</title>
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
 
     <style>
         :root{--white-color: #fff;--black-color: #333333;--purple-color: #8841da;--blue-color: #3f579a;--fuente-lato: "Lato", sans-serif;--fuente-oswald: "Oswald", sans-serif}.color-purple{color:var(--purple-color)}.badge-purple-gradient{color:var(--white-color);background:linear-gradient(40deg,#ff6ec4,#7873f5)}.badge-aqua-gradient{color:var(--white-color);background:linear-gradient(40deg,#2096ff,#05ffa3)}.badge-peach-gradient{color:var(--white-color);background:linear-gradient(40deg,#ffd86f,#fc6262)}.badge-blue-gradient{color:var(--white-color);background:linear-gradient(40deg,#45cafc,#303f9f)}.separate{border-bottom:1px solid #ebebeb}::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:linear-gradient(40deg,#ff6ec4,#7873f5);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#d465c6;box-shadow:0 0 2px 1px rgba(0,0,0,0.2)}::-webkit-scrollbar-thumb:active{background:linear-gradient(40deg,#2096ff,#05ffa3)}::-webkit-scrollbar-track{background:#e1e1e1;border-radius:4px}::-webkit-scrollbar-track:hover,::-webkit-scrollbar-track:active{background:#d4d4d4}#navbar a{color:var(--blue-color);font-family:var(--fuente-oswald);text-transform:uppercase;font-weight:700;text-decoration:underline solid transparent}.bg-header{background-color:var(--white-color);height:90px;border-bottom:1px solid #ebebeb;color:var(--blue-color)!important}.nav-canvas{background-color:var(--white-color);z-index:2}.navbar-light .navbar-brand{color:var(--blue-color);font-weight:bold;text-transform:uppercase}#main h2{font-size:24px}.card-projects{border-radius:15px;overflow:hidden;flex-shrink:0;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}.card-projects img{object-fit:cover}.projects-title{color:var(--purple-color);font-family:var(--fuente-oswald);font-weight:600;text-transform:uppercase}.projects-text{font-weight:400;color:#747373}.projects-text a{color:var(--blue-color);font-family:var(--fuente-oswald);font-weight:700}.btn-projects{border:none}.waves{overflow:hidden;position:relative}.waves::before{content:"";position:absolute;background-color:#eee;padding:50%;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) scale(1);opacity:0}
@@ -40,9 +39,9 @@
                         <a class="nav-link" onclick="$('#project-javascript').animatescroll();"
                             href="#project-javascript">JAVASCRIPT</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)">Angular</a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
@@ -364,8 +363,7 @@
                             <h5 class="card-title mb-0"><a class="projects-title" href="src/router-javascript/"
                                     target="_blank">ROUTER SPA JAVASCRIPT</a></h5>
                             <div class="badges mb-2">
-                                <span class="badge badge-blue-gradient">API</span>
-                                <span class="badge badge-purple-gradient">SPA</span>
+                                <span class="badge badge-purple-gradient">SPA Router</span>
                                 <span class="badge badge-peach-gradient">Javascript</span>
                             </div>
                             <p class="card-text projects-text">
@@ -381,16 +379,69 @@
                     </div>
                 </div>
 
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card card-projects border-top-0">
+                        <a href="src/movie-javascript/" target="_blank">
+                            <img src="assets/img/javascrip-movie.png" height="250" class="card-img-top"
+                                alt="MOVIE JAVASCRIPT">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0"><a class="projects-title" href="src/movie-javascript/"
+                                    target="_blank">MOVIES JAVASCRIPT</a></h5>
+                            <div class="badges mb-2">
+                                <span class="badge badge-blue-gradient">API</span>
+                                <span class="badge badge-purple-gradient">GRID</span>
+                                <span class="badge badge-peach-gradient">Javascript</span>
+                            </div>
+                            <p class="card-text projects-text">
+                              Creación de un proyecto de movies donde se consume una API en vanillaJS para cargar información dinámica  en la
+                              página.   
+                                <a href="https://github.com/edwinflz/projects/tree/master/src/movie-javascript"
+                                    target="_blank" data-toggle="tooltip" title="Ir a repositorio GITHUB">Repositorio
+                                    Aquí!</a>
+                            </p>
+                            <a href="src/movie-javascript/" target="_blank"
+                                class="btn badge-purple-gradient btn-projects btn-block waves">VER</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card card-projects border-top-0">
+                        <a href="src/juego-javascript/" target="_blank">
+                            <img src="assets/img/Proyecto-Fundamentos-Javascript.webp" height="250" class="card-img-top"
+                                alt="JUEGO JAVASCRIPT">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0"><a class="projects-title" href="src/juego-javascript/"
+                                    target="_blank">JUEGO JAVASCRIPT</a></h5>
+                            <div class="badges mb-2">
+                                <span class="badge badge-peach-gradient">Javascript</span>
+                            </div>
+                            <p class="card-text projects-text">
+                              Creación de un Juego de Memorización de patrones realizado en Javascript, aplicando conceptos
+                              de Clase con el estándar EcmaScript6.   
+                                <a href="https://github.com/edwinflz/projects/tree/master/src/juego-javascript"
+                                    target="_blank" data-toggle="tooltip" title="Ir a repositorio GITHUB">Repositorio
+                                    Aquí!</a>
+                            </p>
+                            <a href="src/juego-javascript/" target="_blank"
+                                class="btn badge-purple-gradient btn-projects btn-block waves">VER</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
     </section>
 
-
-    <link async rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
+    
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
      
     <script src="plugins/jquery/jquery-3.4.0.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
