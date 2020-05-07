@@ -1,6 +1,7 @@
 :root {
     /*------ Colores */
     --white-color: #fff;
+    --black-color: #222;
     /* ------- Tipografia */
     --fuente-dancing: "Dancing Script", "cursive", sans-serif;
 }
@@ -30,6 +31,10 @@ a {
     color: var(--white-color);
 }
 
+.medium {
+    font-size: 1.5em;
+}
+
 
 /**** CSS **********/
 
@@ -55,9 +60,6 @@ a {
 .navigation {
     margin: 0;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     position: relative;
     z-index: 2;
 }
@@ -69,7 +71,6 @@ a {
 }
 
 .navigation-menu {
-    position: fixed;
     color: var(--white-color);
     right: 5em;
     top: 3em;
@@ -93,4 +94,75 @@ a {
 
 .navigation ol li a:hover {
     text-decoration: none;
+}
+
+.navigation-footer {
+    background-color: var(--black-color);
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.menus {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*** Verificacion position navigation footer ***/
+
+#description.position-absolute {
+    bottom: 0px;
+}
+
+#description.position-fixed {
+    top: 0px;
+}
+
+
+/*** Fin ***/
+
+
+/************ MAIN MENU ***********/
+
+.food {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.food:hover .screen {
+    top: 0%
+}
+
+.food .screen {
+    position: relative;
+    top: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    transition: top 0.4s;
+}
+
+.screen .screen-title {
+    font-size: 2.5em;
+    font-family: var(--fuente-dancing);
+}
+
+#menu-title {
+    width: 300px;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: var(--white-color);
+}
+
+#menu-title h2 {
+    margin: 2px 0px;
+    font-family: var(--fuente-dancing);
+    font-size: 4em;
 }
