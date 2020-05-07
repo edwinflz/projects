@@ -1,0 +1,96 @@
+:root {
+    /*------ Colores */
+    --white-color: #fff;
+    /* ------- Tipografia */
+    --fuente-dancing: "Dancing Script", "cursive", sans-serif;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/******* UTILS *********/
+
+.white-text {
+    color: var(--white-color);
+}
+
+
+/**** CSS **********/
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.navigation {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.title-video {
+    margin: 0px;
+    font-size: 4em;
+    font-family: var(--fuente-dancing);
+}
+
+.navigation-menu {
+    position: fixed;
+    color: var(--white-color);
+    right: 5em;
+    top: 3em;
+}
+
+.navigation-menu ol li {
+    display: inline-block;
+    padding: 5px 10px;
+    transition: all 0.4s;
+    font-size: 1.5em;
+}
+
+.navigation ol li a {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.navigation ol li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation ol li a:hover {
+    text-decoration: none;
+}
