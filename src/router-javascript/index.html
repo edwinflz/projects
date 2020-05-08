@@ -6,52 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROUTER SPA</title>
     <link rel="icon" href="../../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-items: center;
-            border: 1px solid #eeeeee;
-        }
-
-        .menu--item {
-            cursor: pointer;
-        }
-
-        .menu--item:hover {
-            color: limegreen;
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="menu">
-        <div class="menu--item" onclick="router.loadRoute('')">
-            <p>Home</p>
-        </div>
-        <div class="menu--item" onclick="router.loadRoute('contacto')">
-            <p>Contact</p>
-        </div>
-        <div class="menu--item" onclick="router.loadRoute('about')">
-            <p>About me</p>
-        </div>
-    </header>
 
-    <div class="container" data-router>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+       
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="router.loadRoute('')">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="router.loadRoute('contacto')">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="router.loadRoute('about')">About Me</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container mt-5" data-router>
     </div>
 
+
+    <script src="../../plugins/jquery/jquery-3.4.0.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="router.js"></script>
     <script src="routes.js"></script>
     <script src="index.js"></script>

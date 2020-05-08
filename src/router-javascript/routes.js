@@ -1,14 +1,23 @@
 const routes = [
     {
         path: '/',
-        template: '<h1>Home</h1>'
+        template: `<div class="alert alert-primary" role="alert">
+        Estoy en el HOME!
+        </div>`
     },
     {
         path: '/contacto',
-        template: '<h1>Contacto</h1>'
+        template: `<div class="alert alert-success" role="alert">
+        Estoy en CONTACTO!
+        </div>`
     },
     {
         path: '/about',
-        template: '<h1>About ME</h1>'
+        template: `<div class="alert alert-danger" role="alert">
+        Estoy en ABOUT!
+        </div>`
     }
 ];
+
+
+
