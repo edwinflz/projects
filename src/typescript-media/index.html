@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>TypeScript MediaPlayer</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Media Player <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <video class="movie">
+                    <source class="embed-responsive-item" src="video/video-demostrativo.mp4" />
+                </video>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-success mr-2" id="playButton">Play</button>
+                    <button class="btn btn-info" id="muteButton">Sonido</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-4">
+        <div class="text-center alert alert-danger" role="alert">
+            <strong>Importante!. Desactiva el adblock para poder visualizar
+                la "publicidad sobre el elemento video".
+            </strong>
+        </div>
+
+        <div class="text-center alert alert-info" role="alert">
+            <strong>
+                Al realizar scroll veras que el video pausara en un 25% de visibilidad del video con
+                respecto al viewport.
+            </strong>
+        </div>
+
+        <div class="text-center alert alert-warning" role="alert">
+            <strong>Si te sales de la página veras que el video pausa, esto da un mejor performance al U/X.
+                Puedes Habilitar el sonido <a href="pagina.html" target="_blank">Intenta! da click aquí</a>
+            </strong>
+        </div>
+
+
+        <h2>Comentarios</h2>
+
+        <ul class="list-unstyled mt-5">
+            <li class="media">
+              <img src="img/perfil.jpg" class="mr-3 rounded-circle" alt="perfil" width="64" height="64">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media my-4">
+              <img src="img/perfil.jpg" class="mr-3 rounded-circle" alt="perfil" width="64" height="64">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media">
+              <img src="img/perfil.jpg" class="mr-3 rounded-circle" alt="perfil" width="64" height="64">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+          </ul>
+    </div>
+
+
+
+
+
+    <script src="../../plugins/jquery/jquery-3.4.0.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
