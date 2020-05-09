@@ -1,14 +1,11 @@
-Repositorio de proyectos
-  - HTML5
-  - CSS3
-  - FLEXBOX Y GRID
-  - BOOTSTRAP 4
-  - MATERIALIZE
-  - RESPONSIVE DESIGN
-  - JAVASCRIPT MODERNO
-  - ANGULAR
-  - SPA
-  - ECMASCRIPT 6
-  - TYPESCRIPT
+# Repositorio de proyectos
 
-   ##https://edwinflz.github.io/projects/
+### Conceptos aplicados:
+
+- HTML5;
+- CSS3;
+- JAVASCRIPT MODERNO;
+- SPA;
+- FRAMEWORK BOOTSTRAP Y MATERIALIZE;
+
+ https://edwinflz.github.io/projects/
