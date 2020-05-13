@@ -264,6 +264,18 @@ a {
     width: 100vw;
   }
 
+  .container .card h3 {
+    font-size: 1em;
+  }
+  
+  .container .card strong {
+    font-size:1em;
+  }
+  
+  .container .card p {
+    font-size: 0.8em;
+  }
+
 
 
 }
