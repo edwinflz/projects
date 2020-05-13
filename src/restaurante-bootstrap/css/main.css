@@ -148,7 +148,7 @@ a {
 
 #menu-title {
   width: 300px;
-  z-index: 5;
+  z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -197,7 +197,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 6;
+  z-index: 1;
 }
 
 #map {
@@ -250,6 +250,10 @@ a {
     padding: 10px 15px;
   }
 
+  #navigation {
+    display: none !important;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -260,8 +264,6 @@ a {
     width: 100vw;
   }
 
-  #navigation {
-      display: none;
-  }
+
 
 }

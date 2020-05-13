@@ -1,23 +1,12 @@
 $(function () {
 
-    let sticky = false;
 
     $stickyNavigation.removeClass('d-none');
     $stickyNavigation.slideUp(0);
+    checkScroll();
 
 
-    $(window).scroll(() => {
-        const inBottom = heightDescription();
-
-        if (inBottom && !sticky) {
-            sticky = true;
-            stickyNavigation();
-        }
-        if (!inBottom && sticky) {
-            sticky = false;
-            unStickyNavigation();
-        }
-    });
+    $(window).scroll(checkScroll);
 
     $('#menu-open').on('click', function () {
         $('#responsive-nav ol').toggleClass('active');
@@ -27,9 +16,24 @@ $(function () {
  
 });
 
+
+let sticky = false;
 const $stickyNavigation = $('#sticky-navigation');
 const $description = $('#description');
 const $navigation = $('#navigation');
+
+const checkScroll = () => {
+    const inBottom = heightDescription();
+
+        if (inBottom && !sticky) {
+            sticky = true;
+            stickyNavigation();
+        }
+        if (!inBottom && sticky) {
+            sticky = false;
+            unStickyNavigation();
+        }
+}
 
 const stickyNavigation = () => {
     $description.addClass('position-fixed').removeClass('position-absolute');
