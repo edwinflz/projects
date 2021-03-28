@@ -8,7 +8,7 @@ body {
   align-items: center;
   padding-top: 10px;
   color: #fff;
-  background-color: #8841da;
+  background-color: #2F383A;
 }
 
 .perfil__avatar {
@@ -17,9 +17,12 @@ body {
   border-radius: 50em;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 
 .perfil__titulo {
+  font-size: 16px;
+  width: 100%;
   align-self: flex-start;
   margin-top: 2px;
   border-bottom: 2px solid #fff;
@@ -37,15 +40,17 @@ body {
   flex-direction: column;
   align-self: flex-start;
 }
-
+.perfil__info a {
+  color: #eee;
+}
 .info {
   padding: 50px 0 0 50px;
   background-color: #fff;
 }
 
 .articulo {
-  margin-bottom: 60px;
-  border-bottom: 3px solid #8841da;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #6c757d;
 }
 .articulo__categoria {
   font-weight: 500;
@@ -67,4 +72,21 @@ body {
   line-height: 30px;
   margin-bottom: 30px;
   padding-right: 100px;
+}
+.articulo__descripcion.fecha {
+  margin-bottom: 0px;
+  margin-left: -5px;
+}
+.articulo__lista {
+  padding-left: 18px;
+  border-left: 2px solid #6c757d;
+}
+.articulo__lista.no__border {
+  border-left: none;
+}
+.articulo__lista li {
+  margin-left: 10px;
+}
+.progress-bar {
+  background-color: #6c757d;
 }
